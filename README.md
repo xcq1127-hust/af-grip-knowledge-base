@@ -1,11 +1,12 @@
 # AF-GRIP Knowledge Base Skill
 
-Codex skill for evidence-aware queries of AF-GRIP Knowledge Base v1.0 and its
+Codex skill for evidence-aware queries of versioned AF-GRIP Knowledge Base releases and its
 independent Literature Context v1.0.
 
 ## Data releases
 
 - Knowledge Base v1.0: https://doi.org/10.5281/zenodo.22089524
+- Knowledge Base v1.1: use the separately versioned Zenodo record once published; it uses a four-view score and tie-aware GO handling.
 - Literature Context v1.0: https://doi.org/10.5281/zenodo.22089535
 
 Download and unpack both archives. Configure their paths before using the
