@@ -1,12 +1,12 @@
 ---
 name: af-grip-knowledge-base
-description: Query and interpret AF-GRIP Knowledge Base v1.0 for AF gene prioritization, gene comparisons, and 10q22 fine-mapping/V2G evidence.
+description: Query and interpret versioned AF-GRIP Knowledge Base releases for AF gene prioritization, gene comparisons, and 10q22 fine-mapping/V2G evidence.
 ---
 
 # AF-GRIP Knowledge Base
 
 Use this skill for requests to look up, compare, summarize, or prepare outputs
-from AF-GRIP Knowledge Base v1.0. It can also retrieve the independent,
+from AF-GRIP Knowledge Base v1.0 or v1.1. It can also retrieve the independent,
 post-ranking AF-GRIP Literature Context v1.0 as an explanatory layer.
 
 Before querying, locate unpacked releases using these environment variables:
@@ -43,9 +43,9 @@ for example, `MOG1` resolves to current HGNC symbol `RANGRF`.
 - Describe AF-GRIP scores as candidate-prioritization outputs. Do not call them
   causal probabilities, clinical risk scores, drug-target probabilities, or
   human intervention effects.
-- Treat a missing language view as missing evidence, never as negative evidence.
+- For v1.0, treat the missing language view as missing evidence, never as negative evidence. For v1.1, language-derived literature context is excluded from the score.
 - Treat Literature Context as post-ranking, non-scoring retrieval context. It
-  must never alter, reweight, or be added to an AF-GRIP v1.0 rank or score.
+  must never alter, reweight, or be added to an AF-GRIP rank or score.
 - Do not call a retrieved article a validated gene-AF relation. Report its PMID,
   source sentence, matching scope, and `unreviewed` curation state.
 - Do not infer a unique 10q22 effector gene. MYOZ1 and SYNPO2L have shared
