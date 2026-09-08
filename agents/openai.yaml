@@ -1,4 +1,4 @@
 interface:
   display_name: "AF-GRIP Knowledge Base"
   short_description: "Query and interpret the AF-GRIP gene-prioritization resource"
-  default_prompt: "Query AF-GRIP Knowledge Base v1.0 for AF gene prioritization or 10q22 V2G evidence, preserving evidence limitations and provenance."
+  default_prompt: "Query a versioned AF-GRIP Knowledge Base release for AF gene prioritization or 10q22 V2G evidence, preserving release-specific limitations and provenance."
