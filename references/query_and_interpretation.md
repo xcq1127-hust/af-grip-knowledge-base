@@ -27,8 +27,9 @@ indexed historical alias through the Literature Context HGNC alias table, e.g.
   It is not a probability.
 - `modalities_nonmissing` is a coverage measure. It is not independent evidence
   strength by itself.
-- `LanguageEvidenceScore = null` is a release-wide missing value, not evidence
-  against a gene.
+- In v1.0, `LanguageEvidenceScore = null` is a release-wide missing value, not
+  evidence against a gene. In v1.1, language-derived literature context is
+  excluded from the four-view score; a retained null field is not a score input.
 - A high `GeneticScore` may reflect nearest-gene aggregation and does not make a
   causal gene assignment.
 - A positive/negative atrial-state component is expression association, not a
